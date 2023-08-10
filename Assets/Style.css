@@ -1,6 +1,12 @@
-
 #logo {
-font-family: 'Lobster', cursive;
-font-size: 2rem;
+	font-family: "Lobster", cursive;
+	font-size: 3rem;
 }
 
+.jamicon {
+	height: 30px;
+   }
+
+   .rateMe {
+    border-radius: 5px;
+      }
