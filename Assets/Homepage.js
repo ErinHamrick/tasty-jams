@@ -15,6 +15,7 @@ function fetchAPI() {
       return response.json();
     })
     .then((body) => {
+      console.log(body);
       searchWikipedia(
         body.track_details[0].song_name + " by " + body.track_details[0].artist
       );
