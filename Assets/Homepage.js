@@ -33,6 +33,10 @@ function fetchAPI() {
       iframe.src = `https://open.spotify.com/embed/track/${trackId}?utm_source=generator`;
 
       searchWikipedia(track.song_name + " by " + track.artist);
+      console.log(body);
+      searchWikipedia(
+        body.track_details[0].song_name + " by " + body.track_details[0].artist
+      );
     });
 }
 
