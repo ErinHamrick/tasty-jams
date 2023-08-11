@@ -1,4 +1,4 @@
- function fetchAPI() {
+function fetchAPI() {
   const url =
     "https://spotify117.p.rapidapi.com/spotify_playlist/?url=https://open.spotify.com/playlist/6UeSakyzhiEt4NB3UAd6NQ?si=13e7606ad3864749";
   const options = {
@@ -15,6 +15,24 @@
       return response.json();
     })
     .then((body) => {
+      // Get all the track objects in an array
+      const tracks = Object.values(body.track_details).slice(0, 100);
+
+      // 1. Randomly select a track from body.track_details
+      // 2. Parse the track.link to get the track ID
+      // 3. Update the iframe's URL with that ID
+
+      // 1.
+      const track = tracks[Math.floor(Math.random() * 100)];
+
+      // 2.
+      const trackId = track.link.split("track/")[1];
+
+      // 3.
+      const iframe = document.querySelector("#track-embed");
+      iframe.src = `https://open.spotify.com/embed/track/${trackId}?utm_source=generator`;
+
+      searchWikipedia(track.song_name + " by " + track.artist);
       console.log(body);
       searchWikipedia(
         body.track_details[0].song_name + " by " + body.track_details[0].artist
@@ -34,7 +52,12 @@ async function searchWikipedia(searchTerm) {
     //     "Api-User-Agent": "YOUR_APP_NAME (YOUR_EMAIL_OR_CONTACT_PAGE)",
     //   },
   });
-  response.json().then(console.log).catch(console.error);
+  response
+    .json()
+    .then((data) => {
+      // console.log(data);
+    })
+    .catch(console.error);
 }
 
 // let xhr = new XMLHttpRequest();
