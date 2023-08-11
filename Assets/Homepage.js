@@ -60,6 +60,15 @@ async function searchWikipedia(searchTerm) {
     .catch(console.error);
 }
 
+//Dayjs will add the date and time
+
+function updateDateTime() {
+  const currentDate = dayjs().format("MMMM D, YYYY h:mm A");
+  document.getElementById("current-day").textContent = currentDate;
+}
+updateDateTime();
+setInterval(updateDateTime, 1000);
+
 // let xhr = new XMLHttpRequest();
 
 // let url2 =
