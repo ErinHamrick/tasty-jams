@@ -1,12 +1,23 @@
 #logo {
+  padding-left: 50px;
 	font-family: "Lobster", cursive;
-	font-size: 3rem;
+	font-size: 4rem;
+  min-height: 100px;
+  padding-top: 10px;
 }
 
 .jamicon {
 	height: 30px;
-   }
+}
 
-   .rateMe {
-    border-radius: 5px;
-      }
+.rateMe {
+	border-radius: 5px;
+  border: 2px solid rgb(144, 49, 49);
+  
+  }
+
+#current-day {
+	 font-size: 2rem; 
+   padding-right: 20px
+   
+}
