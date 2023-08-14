@@ -4,7 +4,7 @@ function fetchAPI() {
   const options = {
     method: "GET",
     headers: {
-      "X-RapidAPI-Key": "b5104218ecmsh61f115fb8126d63p13f208jsna219ed1ee5f1",
+      "X-RapidAPI-Key": "de8d4cd255msh8d0d9cf11e2ecacp1724f7jsn3ae9d42ef9b7",
       "X-RapidAPI-Host": "spotify117.p.rapidapi.com",
     },
   };
