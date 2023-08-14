@@ -4,20 +4,34 @@
 	font-size: 4rem;
   min-height: 100px;
   padding-top: 10px;
+  background-color: #412312;
+}
+
+nav div img {
+   height: 60px;
+  
 }
 
 .jamicon {
-	height: 30px;
+	height: 40px;
+  border-radius: 5px;
 }
 
 .rateMe {
 	border-radius: 5px;
-  border: 2px solid rgb(144, 49, 49);
-  
+  border: none;
+   
   }
 
 #current-day {
 	 font-size: 2rem; 
-   padding-right: 20px
-   
+   padding-right: 20px;
+   color: #D6573E;
+}
+#main {
+  padding-top: 50px;
+}
+
+#sideLogo {
+  height: 100px;
 }
