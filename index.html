@@ -14,22 +14,30 @@
 		<link
 			href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Caveat&family=Hanken+Grotesk:wght@300&family=Lobster&family=Sigmar+One&display=swap"
 			rel="stylesheet" />
-			<script
+		<script
 			src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
 			integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
-			crossorigin="anonymous"
-		  ></script>
+			crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="Assets/Style.css" />
 	</head>
 
 	<body>
-		<nav class="nav-wrapper teal lighten-1 black-text" id="logo">
-				<div>Tasty Jams <span class="right" id="current-day"></span></div>
+		<nav class="nav-wrapper" id="logo">
+			<div>
+				<img src="./Assets/Tasty-Jams-Texts.png" alt="Logo" />
+				<span class="right" id="current-day"></span>
+			</div>
 		</nav>
-		<div class="container">
-      <section class="row">
-			<iframe id="track-embed"
-      class="col l6 m6 s8 offset-l3"
+
+		<section class="container">
+			<div class="row" id="main"></div>
+			<div class="col s2">
+				<img id="sideLogo" src="./Assets/TastyJams-Logo.png" alt="logo" />
+			</div>
+
+			<iframe
+				id="track-embed"
+				class="col l6 m6 s8"
 				style="border-radius: 12px; margin-top: 40px"
 				src=""
 				width="100%"
@@ -39,62 +47,37 @@
 				allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
 				loading="lazy">
 			</iframe>
-    </section>
-				 <section class="ratings">
-				<div class="row">
-					<button class="col offset-l3 rateMe white"><img src="./Assets/jamicon.png" class="jamicon"></button>
-					<!-- <button id="btn-2" class="col" style="margin-left: 5px"><img src="./Assets/jamicon.png" class="jamicon"></button>
-					<button id="btn-3" class="col" style ="margin-left: 5px"><img src="./Assets/jamicon.png" class="jamicon"></button>
-					<button id="btn-4" class="col" style="margin-left: 5px"><img src="./Assets/jamicon.png" class="jamicon"></button>
-					<button id="btn-5" class="col" style="margin-left: 5px"><img src="./Assets/jamicon.png" class="jamicon"></button>
-				</div> -->
-			</section>
-      <section class="ratings">
-				<div class="row">
-					<button  class="col offset-l3 rateMe white"><img src="./Assets/jamicon.png" class="jamicon"><img src="./Assets/jamicon.png" class="jamicon"></button> 
-					<!-- <button id="btn-2" class="col" style="margin-left: 5px"><img src="./Assets/jamicon.png" class="jamicon"></button>  -->
-					<!-- <button id="btn-3" class="col" style ="margin-left: 5px"><img src="./Assets/jamicon.png" class="jamicon"></button>
-					<button id="btn-4" class="col" style="margin-left: 5px"><img src="./Assets/jamicon.png" class="jamicon"></button>
-					<button id="btn-5" class="col" style="margin-left: 5px"><img src="./Assets/jamicon.png" class="jamicon"></button> -->
-				</div>
-			</section>
-      <section class="ratings">
-				<div class="row">
-					<button class="col offset-l3 rateMe white"><img src="./Assets/jamicon.png" class="jamicon"><img src="./Assets/jamicon.png" class="jamicon"><img src="./Assets/jamicon.png" class="jamicon"></button>
-					<!-- <button id="btn-2" class="col" style="margin-left: 5px"><img src="./Assets/jamicon.png" class="jamicon"><img src="./Assets/jamicon.png" class="jamicon"><img src="./Assets/jamicon.png" class="jamicon"></button>
-					<button id="btn-3" class="col" style ="margin-left: 5px"><img src="./Assets/jamicon.png" class="jamicon"></button>
-					<button id="btn-4" class="col" style="margin-left: 5px"><img src="./Assets/jamicon.png" class="jamicon"></button>
-					<button id="btn-5" class="col" style="margin-left: 5px"><img src="./Assets/jamicon.png" class="jamicon"></button> -->
-				</div>
-			</section>
-      <section class="ratings">
-				<div class="row">
-					<button class="col offset-l3 rateMe white"><img src="./Assets/jamicon.png" class="jamicon"><img src="./Assets/jamicon.png" class="jamicon"><img src="./Assets/jamicon.png" class="jamicon"><img src="./Assets/jamicon.png" class="jamicon"></button>
-					<!-- <button id="btn-2" class="col" style="margin-left: 5px"><img src="./Assets/jamicon.png" class="jamicon"></button>
-					<button id="btn-3" class="col" style ="margin-left: 5px"><img src="./Assets/jamicon.png" class="jamicon"></button>
-					<button id="btn-4" class="col" style="margin-left: 5px"><img src="./Assets/jamicon.png" class="jamicon"></button>
-					<button id="btn-5" class="col" style="margin-left: 5px"><img src="./Assets/jamicon.png" class="jamicon"></button> -->
-				</div>
-			</section>
-      <section class="ratings">
-				<div class="row">
-					<button class="col offset-l3 rateMe white"><img src="./Assets/jamicon.png" class="jamicon"><img src="./Assets/jamicon.png" class="jamicon"><img src="./Assets/jamicon.png" class="jamicon"><img src="./Assets/jamicon.png" class="jamicon"><img src="./Assets/jamicon.png" class="jamicon"></button>
-					<!-- <button id="btn-2" class="col" style="margin-left: 5px"><img src="./Assets/jamicon.png" class="jamicon"></button>
-					<button id="btn-3" class="col" style ="margin-left: 5px"><img src="./Assets/jamicon.png" class="jamicon"></button>
-					<button id="btn-4" class="col" style="margin-left: 5px"><img src="./Assets/jamicon.png" class="jamicon"></button>
-					<button id="btn-5" class="col" style="margin-left: 5px"><img src="./Assets/jamicon.png" class="jamicon"></button> -->
-				</div>
-			</section>
-			<section id="calender">
-				<p id="calender-p"></p>
-			</section>
-		</div>
-		<script src="Assets/Homepage.js"></script>
+		</section>
+		<section class="ratings">
+			<div class="row">
+				<button class="col offset-l3 offset-m4 offset-s6 rateMe white">
+					<img src="./Assets/Tasty-Toast-Man2.png" class="jamicon" />
+				</button>
+				<button class="col rateMe white">
+					<img src="./Assets/Tasty-Toast-Man2.png" class="jamicon" />
+				</button>
+				<button class="col rateMe white">
+					<img src="./Assets/Tasty-Toast-Man2.png" class="jamicon" />
+				</button>
+				<button class="col rateMe white">
+					<img src="./Assets/Tasty-Toast-Man2.png" class="jamicon" />
+				</button>
+				<button class="col rateMe white">
+					<img src="./Assets/Tasty-Toast-Man2.png" class="jamicon" />
+				</button>
+			</div>
+		</section>
+
+		<section id="calender">
+			<p id="calender-p"></p>
+		</section>
+
 		<script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
 		<script
 			src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"
 			integrity="sha512-m2PhLxj2N91eYrIGU2cmIu2d0SkaE4A14bCjVb9zykvp6WtsdriFCiXQ/8Hdj0kssUB/Nz0dMBcoLsJkSCto0Q=="
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"></script>
+		<script src="Assets/Homepage.js"></script>
 	</body>
 </html>
