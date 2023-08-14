@@ -9,7 +9,7 @@
 
 nav div img {
    height: 60px;
-  
+    
 }
 
 .jamicon {
@@ -20,8 +20,12 @@ nav div img {
 .rateMe {
 	border-radius: 5px;
   border: none;
-   
+  background-color: #412312;
+  width: 60px;
+  margin: 5px;
   }
+
+  
 
 #current-day {
 	 font-size: 2rem; 
