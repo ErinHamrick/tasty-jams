@@ -2,13 +2,13 @@
   padding-left: 50px;
 	font-family: "Lobster", cursive;
 	font-size: 4rem;
-  min-height: 100px;
+  min-height: 150px;
   padding-top: 10px;
   background-color: #412312;
 }
 
 nav div img {
-   height: 60px;
+   height: 135px;
     
 }
 
@@ -25,7 +25,12 @@ nav div img {
   margin: 5px;
   }
 
-  
+  #question {
+    font-family: "Lobster", cursive;
+    font-size: 3rem;
+    margin-right: 30px;
+    
+  }
 
 #current-day {
 	 font-size: 2rem; 
@@ -34,6 +39,11 @@ nav div img {
 }
 #main {
   padding-top: 50px;
+}
+
+#track-embed {
+  min-width: 600px;
+  max-width: 1000px;
 }
 
 #sideLogo {

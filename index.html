@@ -24,20 +24,16 @@
 	<body>
 		<nav class="nav-wrapper" id="logo">
 			<div>
-				<img src="./Assets/Tasty-Jams-Texts.png" alt="Logo" />
+				<img src="./Assets/TastyJams-Logo.png" alt="Logo" />
 				<span class="right" id="current-day"></span>
 			</div>
 		</nav>
 
 		<section class="container">
 			<div class="row" id="main"></div>
-			<div class="col s2">
-				<img id="sideLogo" src="./Assets/TastyJams-Logo.png" alt="logo" />
-			</div>
-
 			<iframe
 				id="track-embed"
-				class="col l6 m6 s8"
+				class="col"
 				style="border-radius: 12px; margin-top: 40px"
 				src=""
 				width="100%"
@@ -50,7 +46,9 @@
 		</section>
 		<section class="ratings">
 			<div class="row">
-				<button class="col offset-l3 offset-m4 offset-s6 rateMe">
+				<span id="question" class="col offset-s2 offset-m2 offset-l3 "> Spread Your Taste: 
+				</span>
+				<button class="col rateMe">
 					<img src="./Assets/Tasty-Toast-Man2.png" class="jamicon" />
 				</button>
 				<button class="col rateMe">
