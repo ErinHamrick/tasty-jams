@@ -72,13 +72,9 @@ nav div img {
 }
 
 .modal {
-	/* display: none; */
-	/* position: fixed; */
-	/* top: 0; */
-	/* left: 0; */
   position: fixed;
-  bottom: 50px;
-	display: block;
+  bottom: 100px;
+	display: none;
 	width: 500px;
 	height: 250px;
 	background-color: #99683d;
