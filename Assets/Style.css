@@ -29,9 +29,11 @@ nav div img {
 }
 
 #question {
+	position: relative;
+	bottom: 15px;
+	right: 10px;
 	font-family: "Lobster", cursive;
 	font-size: 3rem;
-	margin-right: 30px;
 	color: #412312;
 }
 
@@ -54,28 +56,41 @@ nav div img {
 	display: inline-block;
 }
 
-
 .tooltiptext {
 	position: relative;
-  font-family: "Lobster", cursive;
+	font-family: "Lobster", cursive;
 	font-size: 1.5rem;
 	color: #412312;
-  display: none;
-	
+	display: none;
 }
 
 .tooltip:hover .tooltiptext {
-display: block;
-position: absolute;
-top: 100%;
-left: 10%;
-
+	display: block;
+	position: absolute;
+	top: 100%;
+	left: 10%;
 }
 
 #wikiBtn {
-  min-height: 30px;
-  min-width: 50px;
-  border: 2px solid #412312;
-  font-size: 1.25rem;
+	min-height: 30px;
+	min-width: 50px;
+	border: 2px solid #412312;
+	font-size: 1.25rem;
+	color: #412312;
+	border-radius: 5px;
+	box-shadow: 0 2px;
 }
+#wikiBtn:hover {
+	cursor: grab;
+}
+
+@media screen and (max-width: 1000px) {
+	.tooltiptext {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 10%;
+	}
+}
+
 
