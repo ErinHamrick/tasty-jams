@@ -1,51 +1,48 @@
 #logo {
-  padding-left: 50px;
+	padding-left: 50px;
 	font-family: "Lobster", cursive;
 	font-size: 4rem;
-  min-height: 150px;
-  padding-top: 10px;
-  background-color: #412312;
+	min-height: 150px;
+	padding-top: 10px;
+	background-color: #412312;
 }
 
 nav div img {
-   height: 135px;
-    
+	height: 135px;
+}
+
+#current-day {
+	font-size: 2rem;
+	padding-right: 20px;
+	color: #d6573e;
+}
+
+#main {
+	padding-top: 50px;
 }
 
 .jamicon {
 	height: 40px;
-  border-radius: 5px;
+	width: 40px;
+	border-radius: 5px;
+}
+#question {
+	font-family: "Lobster", cursive;
+	font-size: 3rem;
+	margin-right: 30px;
 }
 
 .rateMe {
 	border-radius: 5px;
-  border: none;
-  background-color: #412312;
-  width: 60px;
-  margin: 5px;
-  }
-
-  #question {
-    font-family: "Lobster", cursive;
-    font-size: 3rem;
-    margin-right: 30px;
-    
-  }
-
-#current-day {
-	 font-size: 2rem; 
-   padding-right: 20px;
-   color: #D6573E;
+	border: none;
+	background-color: #412312;
+	width: 60px;
+	height: 60px;
+	margin: 5px;
 }
-#main {
-  padding-top: 50px;
-}
+
 
 #track-embed {
-  min-width: 600px;
-  max-width: 1000px;
-}
-
-#sideLogo {
-  height: 100px;
+	min-width: 600px;
+	max-width: 1000px;
 }
