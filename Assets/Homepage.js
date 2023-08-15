@@ -69,6 +69,25 @@ function updateDateTime() {
 updateDateTime();
 setInterval(updateDateTime, 1000);
 
+document.getElementById("btn1").addEventListener("click", function() {
+  document.getElementById("myModal").style.display = "block";});
+
+document.getElementById("btn2").addEventListener("click", function() {
+  document.getElementById("myModal").style.display = "block";});
+
+document.getElementById("btn3").addEventListener("click", function() {
+   document.getElementById("myModal").style.display = "block";});
+
+document.getElementById("btn4").addEventListener("click", function() {
+  document.getElementById("myModal").style.display = "block";});
+
+document.getElementById("btn5").addEventListener("click", function() {
+   document.getElementById("myModal").style.display = "block";});
+
+document.getElementById("closeModalButton").addEventListener("click", function() {
+  document.getElementById("myModal").style.display = "none";
+});
+
 // let xhr = new XMLHttpRequest();
 
 // let url2 =
