@@ -2,14 +2,14 @@
   padding-left: 50px;
 	font-family: "Lobster", cursive;
 	font-size: 4rem;
-  min-height: 100px;
+  min-height: 150px;
   padding-top: 10px;
   background-color: #412312;
 }
 
 nav div img {
-   height: 60px;
-  
+   height: 135px;
+    
 }
 
 .jamicon {
@@ -20,7 +20,16 @@ nav div img {
 .rateMe {
 	border-radius: 5px;
   border: none;
-   
+  background-color: #412312;
+  width: 60px;
+  margin: 5px;
+  }
+
+  #question {
+    font-family: "Lobster", cursive;
+    font-size: 3rem;
+    margin-right: 30px;
+    
   }
 
 #current-day {
@@ -30,6 +39,11 @@ nav div img {
 }
 #main {
   padding-top: 50px;
+}
+
+#track-embed {
+  min-width: 600px;
+  max-width: 1000px;
 }
 
 #sideLogo {
