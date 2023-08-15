@@ -12,8 +12,9 @@ nav div img {
 }
 
 #current-day {
-	font-size: 2rem;
-	padding-right: 20px;
+  font-size: 2rem;
+  padding-top: 30px;
+	padding-right: 40px;
 	color: #d6573e;
 }
 
