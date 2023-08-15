@@ -73,7 +73,7 @@ nav div img {
 
 .modal {
   position: fixed;
-  bottom: 100px;
+  top: 200px;
 	display: none;
 	width: 500px;
 	height: 250px;
