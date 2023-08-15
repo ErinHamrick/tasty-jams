@@ -46,28 +46,62 @@
 		</section>
 		<section class="ratings">
 			<div class="row">
-				<span id="question" class="col offset-s2 offset-m2 offset-l3 "> Spread Your Taste: 
+				<span id="question" class="col offset-s2 offset-m2 offset-l3">
+					Spread Your Taste:
 				</span>
-				<span class="col rateMe" >
-					<img src="./Assets/tasty-toast-man2.png" class="jamicon" id="btn1" />
-				</span>
-				<span class="col rateMe">
-					<img src="./Assets/tasty-toast-man2.png" class="jamicon" id="btn2" />
-				</span>
-				<span class="col rateMe ">
-					<img src="./Assets/tasty-toast-man2.png" class="jamicon" id="btn3"/>
-				</span>
-				<span class="col rateMe">
-					<img src="./Assets/tasty-toast-man2.png" class="jamicon" id="btn4"/>
-				</span>
-				<span class="col rateMe">
-					<img src="./Assets/tasty-toast-man2.png" class="jamicon" id="btn5"/>
-				</span>
+				<div class="tooltip" id="btn1">
+					<span class="tooltiptext">Offensive!</span>
+					<span class="col rateMe">
+						<img
+							src="./Assets/tasty-toast-man2.png"
+							alt="Tasty toast man button - rating: offensive"
+							class="jamicon" />
+					</span>
+				</div>
+				<div class="tooltip" id="btn2">
+					<span class="tooltiptext">Nasty</span>
+					<span class="col rateMe">
+						<img
+							src="./Assets/tasty-toast-man2.png"
+							alt="Tasty toast man button - rating: Nasty"
+							class="jamicon" />
+					</span>
+				</div>
+				<div class="tooltip" id="btn3">
+					<span class="tooltiptext">Meh</span>
+					<span class="col rateMe">
+						<img
+							src="./Assets/tasty-toast-man2.png"
+							alt="Tasty toast man button - rating: meh"
+							class="jamicon" />
+					</span>
+				</div>
+				<div class="tooltip" id="btn4">
+					<span class="tooltiptext">I'd eat it</span>
+					<span class="col rateMe">
+						<img
+							src="./Assets/tasty-toast-man2.png"
+							alt="Tasty toast man button - rating: I'd eat it"
+							class="jamicon" />
+					</span>
+				</div>
+				<div class="tooltip" id="btn5">
+					<span class="tooltiptext">Tasty!</span>
+					<span class="col rateMe">
+						<img
+							src="./Assets/tasty-toast-man2.png"
+							alt="Tasty toast man button - rating: Tasty!"
+							class="jamicon"
+							id="btn5"
+							 />
+					</span>
+				</div>
 			</div>
 		</section>
 
-		<section id="calender">
-			<p id="calender-p"></p>
+		<section class="container center-align">
+			<div class="row"></div>
+			<p class="col" id="wikiBtn">I am a button</p>
 		</section>
 
 		<script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>

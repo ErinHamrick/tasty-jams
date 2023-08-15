@@ -1,6 +1,3 @@
-
-
-
 #logo {
 	padding-left: 50px;
 	font-family: "Lobster", cursive;
@@ -28,28 +25,57 @@ nav div img {
 	height: 40px;
 	width: 40px;
 	border-radius: 5px;
-  padding: none;
+	padding: none;
 }
 
 #question {
 	font-family: "Lobster", cursive;
 	font-size: 3rem;
 	margin-right: 30px;
-  color: #412312;
+	color: #412312;
 }
 
 .rateMe {
-  border-radius: 5px;
+	border-radius: 5px;
 	border: none;
 	background-color: #412312;
 	/* width: 50px;
 	height: 50px; */
 	margin: 10px;
-  padding: none;
+	padding: none;
 }
-
 
 #track-embed {
 	min-width: 600px;
 	max-width: 1000px;
 }
+.tooltip {
+	position: relative;
+	display: inline-block;
+}
+
+
+.tooltiptext {
+	position: relative;
+  font-family: "Lobster", cursive;
+	font-size: 1.5rem;
+	color: #412312;
+  display: none;
+	
+}
+
+.tooltip:hover .tooltiptext {
+display: block;
+position: absolute;
+top: 100%;
+left: 10%;
+
+}
+
+#wikiBtn {
+  min-height: 30px;
+  min-width: 50px;
+  border: 2px solid #412312;
+  font-size: 1.25rem;
+}
+
