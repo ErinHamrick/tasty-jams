@@ -56,7 +56,7 @@ async function searchWikipedia(searchTerm) {
     .json()
     .then((data) => {
       // console.log(data);
-    })
+    }) 
     .catch(console.error);
 }
 
