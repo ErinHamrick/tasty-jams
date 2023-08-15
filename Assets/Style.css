@@ -58,6 +58,8 @@ nav div img {
 }
 
 .tooltiptext {
+  width: 100%;
+  margin: auto;
 	position: relative;
 	font-family: "Lobster", cursive;
 	font-size: 1.5rem;
@@ -69,7 +71,7 @@ nav div img {
 	display: block;
 	position: absolute;
 	top: 100%;
-	left: 10%;
+  	
 }
 
 .modal {
