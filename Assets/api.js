@@ -9,6 +9,12 @@ export async function getTop100Tracks() {
     },
   };
 
+  // 2. Check the cache
+  const tracks = localStorage.getItem("tracks");
+  if (tracks) {
+    return JSON.parse(tracks);
+  }
+
   return await fetch(url, options)
     .then((response) => {
       //   console.log("response.ok: ", response.ok);
@@ -17,6 +23,9 @@ export async function getTop100Tracks() {
     .then((body) => {
       // Get all the track objects in an array
       const tracks = Object.values(body.track_details).slice(0, 100);
+
+      // 1. Cache the tracks
+      localStorage.setItem("tracks", JSON.stringify(tracks));
 
       return tracks;
     });
