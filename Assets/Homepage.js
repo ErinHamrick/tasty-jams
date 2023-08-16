@@ -59,16 +59,12 @@ document.getElementById("btn4").addEventListener("click", function () {
 document.getElementById("btn5").addEventListener("click", function () {
   document.getElementById("myModal").style.display = "block";
 });
-<<<<<<< HEAD
+
 document
   .getElementById("closeModalButton")
   .addEventListener("click", function () {
     document.getElementById("myModal").style.display = "none";
   });
-=======
-
-// let xhr = new XMLHttpRequest();
->>>>>>> 2cec015cbd18061cc5023c2639f087f123427017
 
 // let url2 =
 //   "https://en.wikipedia.org/w/api.php?action=query&origin=*&format=json&generator=search&gsrnamespace=0&gsrlimit=5&gsrsearch='New_England_Patriots'";
