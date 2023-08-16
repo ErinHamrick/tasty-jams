@@ -59,34 +59,11 @@ document.getElementById("btn4").addEventListener("click", function () {
 document.getElementById("btn5").addEventListener("click", function () {
   document.getElementById("myModal").style.display = "block";
 });
-
-document.addEventListener("DOMContentLoaded", function () {
-  const ratingButtons = document.querySelectorAll(".tooltip");
-
-  ratingButtons.forEach(function (button) {
-    button.addEventListener("click", function () {
-      const rating = parseInt(button.dataset.rating); // Use dataset.rating instead of getAttribute
-      if (!isNaN(rating)) {
-        console.log("User rated:", rating);
-      } else {
-        console.log("Invalid rating value");
-      }
-    });
+document
+  .getElementById("closeModalButton")
+  .addEventListener("click", function () {
+    document.getElementById("myModal").style.display = "none";
   });
-});
-
-function saveRatingToLocalStorage(rating) {
-  // Get existing ratings from local storage or initialize an empty array
-  const existingRatings = JSON.parse(localStorage.getItem("ratings")) || [];
-
-  // Add the new rating to the array
-  existingRatings.push(rating);
-
-  // Save the updated array back to local storage
-  localStorage.setItem("ratings", JSON.stringify(existingRatings));
-}
-
-// let xhr = new XMLHttpRequest();
 
 // let url2 =
 //   "https://en.wikipedia.org/w/api.php?action=query&origin=*&format=json&generator=search&gsrnamespace=0&gsrlimit=5&gsrsearch='New_England_Patriots'";
