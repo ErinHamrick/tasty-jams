@@ -1,3 +1,8 @@
+:root {
+	--orange: #d6573e;
+	--brown: #412312;
+}
+
 body {
 	background-color: #e3c9ad;
 }
@@ -7,8 +12,10 @@ body {
 	font-family: "Lobster", cursive;
 	font-size: 4rem;
 	min-height: 150px;
+	max-height: 500px;
 	padding-top: 10px;
-	background-color: #412312;
+	background-color: var(--brown);
+	overflow: hidden;
 }
 
 nav div img {
@@ -19,7 +26,7 @@ nav div img {
 	font-size: 2rem;
 	padding-top: 30px;
 	padding-right: 40px;
-	color: #d6573e;
+	color: var(--orange);
 }
 
 #main {
@@ -43,13 +50,13 @@ nav div img {
 	right: 10px;
 	font-family: "Lobster", cursive;
 	font-size: 3rem;
-	color: #412312;
+	color: var(--brown);
 }
 
 .rateMe {
 	border-radius: 5px;
 	border: none;
-	background-color: #412312;
+	background-color: var(--brown);
 	/* width: 50px;
 	height: 50px; */
 	margin: 10px;
@@ -71,7 +78,7 @@ nav div img {
 	position: relative;
 	font-family: "Lobster", cursive;
 	font-size: 1.5rem;
-	color: #412312;
+	color: var(--brown);
 	display: none;
 }
 
