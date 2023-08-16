@@ -22,6 +22,7 @@ async function loadPage() {
   console.log(`https://en.wikipedia.org/wiki/${data.pages[0].key}`);
 
   let WikiButton = document.createElement("button");
+  WikiButton.setAttribute('id', 'wikiBtn');
   WikiButton.innerHTML = "Learn More";
   WikiButton.addEventListener("click", () => {
     location.href = `https://en.wikipedia.org/wiki/${data.pages[0].key}`;
