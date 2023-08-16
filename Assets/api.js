@@ -35,16 +35,14 @@ export async function getTop100Tracks() {
 
 export async function searchWikipedia(searchTerm) {
   let url = `https://api.wikimedia.org/core/v1/wikipedia/en/search/page?q=${searchTerm}&limit=10`;
-  let response = await fetch(url, {
+  return await fetch(url, {
     //   headers: {
     //     Authorization: "Bearer YOUR_ACCESS_TOKEN",
     //     "Api-User-Agent": "YOUR_APP_NAME (YOUR_EMAIL_OR_CONTACT_PAGE)",
     //   },
-  });
-  response
-    .json()
-    .then((data) => {
-      // console.log(data);
+  })
+    .then((response) => {
+      return response.json();
     })
     .catch(console.error);
 }

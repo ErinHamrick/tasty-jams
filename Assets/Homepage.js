@@ -17,11 +17,16 @@ async function loadPage() {
   const iframe = document.querySelector("#track-embed");
   iframe.src = `https://open.spotify.com/embed/track/${trackId}?utm_source=generator`;
 
-  searchWikipedia(track.song_name + " by " + track.artist);
-  console.log(body);
-  searchWikipedia(
-    body.track_details[0].song_name + " by " + body.track_details[0].artist
-  );
+  let data = await searchWikipedia(track.song_name + " by " + track.artist);
+  console.log(data.pages[0].key);
+  console.log(`https://en.wikipedia.org/wiki/${data.pages[0].key}`);
+
+  let WikiButton = document.createElement("button");
+  WikiButton.innerHTML = "Learn More";
+  WikiButton.addEventListener("click", () => {
+    location.href = `https://en.wikipedia.org/wiki/${data.pages[0].key}`;
+  });
+  document.querySelector("#wikiButtonContainer").append(WikiButton);
 }
 
 loadPage();
@@ -59,14 +64,14 @@ document.addEventListener("DOMContentLoaded", function () {
   const ratingButtons = document.querySelectorAll(".tooltip");
 
   ratingButtons.forEach(function (button) {
-      button.addEventListener("click", function () {
-          const rating = parseInt(button.dataset.rating); // Use dataset.rating instead of getAttribute
-          if (!isNaN(rating)) {
-              console.log("User rated:", rating);
-          } else {
-              console.log("Invalid rating value");
-          }
-      });
+    button.addEventListener("click", function () {
+      const rating = parseInt(button.dataset.rating); // Use dataset.rating instead of getAttribute
+      if (!isNaN(rating)) {
+        console.log("User rated:", rating);
+      } else {
+        console.log("Invalid rating value");
+      }
+    });
   });
 });
 
