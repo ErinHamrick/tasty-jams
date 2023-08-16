@@ -1,24 +1,3 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const ratingButtons = document.querySelectorAll(".tooltip");
-
-  ratingButtons.forEach(function (button) {
-      button.addEventListener("click", function () {
-          const rating = parseInt(button.dataset.rating);
-          const songId = button.dataset.songId;
-
-          if (!isNaN(rating)) {
-              // Call the function to save the rating to local storage
-              saveRatingToLocalStorage(songId, rating);
-
-              // Output for testing
-              console.log("User rated:", rating, "for song:", songId);
-          } else {
-              console.log("Invalid rating value");
-          }
-      });
-  });
-});
-
 function fetchAPI() {
   const url =
     "https://spotify117.p.rapidapi.com/spotify_playlist/?url=https://open.spotify.com/playlist/6UeSakyzhiEt4NB3UAd6NQ?si=13e7606ad3864749";
@@ -109,11 +88,6 @@ document.getElementById("closeModalButton").addEventListener("click", function()
   document.getElementById("myModal").style.display = "none";
 });
 
-function saveRatingToLocalStorage(songId, rating) {
-  const ratings = JSON.parse(localStorage.getItem("ratings")) || {};
-  ratings[songId] = rating;
-  localStorage.setItem("ratings", JSON.stringify(ratings));
-}
 
 // let xhr = new XMLHttpRequest();
 
