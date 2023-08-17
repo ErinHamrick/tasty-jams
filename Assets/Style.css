@@ -62,8 +62,6 @@ nav div img {
 	border-radius: 5px;
 	border: none;
 	background-color: var(--brown);
-	/* width: 50px;
-	height: 50px; */
 	margin: 10px;
 	padding: none;
 }
@@ -107,7 +105,7 @@ nav div img {
 }
 
 .modal-content {
-	color: #412312;
+	color: var(--brown);
 	font-weight: bold;
 	font-size: 1.25rem;
 }
@@ -128,10 +126,10 @@ nav div img {
 #wikiBtn {
 	min-height: 30px;
 	width: 200px;
-	border: 2px solid #412312;
+	border: 2px solid var(--brown);
 	font-size: 2rem;
-	color: #d6573e;
-	background-color: #412312;
+	color: var(--orange);
+	background-color: var(--brown); 
 	border-radius: 5px;
 	box-shadow: 0 2px;
 	font-family: "Lobster", cursive;
