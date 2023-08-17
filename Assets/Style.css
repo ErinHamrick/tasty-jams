@@ -53,6 +53,11 @@ nav div img {
 	color: var(--brown);
 }
 
+.buttons {
+	display: inline-flex;
+	align-items: center;
+}
+
 .rateMe {
 	border-radius: 5px;
 	border: none;
