@@ -1,4 +1,4 @@
-export async function getTop100Tracks() {
+ export async function getTop100Tracks() {
   const url =
     "https://spotify117.p.rapidapi.com/spotify_playlist/?url=https://open.spotify.com/playlist/6UeSakyzhiEt4NB3UAd6NQ?si=13e7606ad3864749";
   const options = {
