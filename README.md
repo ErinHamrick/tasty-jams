@@ -14,7 +14,7 @@ The Tasty Jams development team consists of Erin Hamrick, Paul Jang, Paul Allen,
 
 ## Screenshot
 
-![AltText](assets/0EDAEAB2-5D28-4E98-822E-D9A96C975AD6.jpeg?raw=true "Screenshot")
+![AltText](/Assets/TastyJamsScreenshot.png "Screenshot")
 
 ## Application Link
 
